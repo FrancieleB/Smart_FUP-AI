@@ -106,10 +106,6 @@ python-dotenv==1.0.1
 
 ## 📁 Estrutura do Projeto
 
-
-
-## 📁 Estrutura do Projeto
-
 | Pasta/Arquivo              | Descrição                                                                 |
 |-----------------------------|---------------------------------------------------------------------------|
 | **README.md**               | Documentação principal do projeto                                         |
