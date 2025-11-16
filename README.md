@@ -64,7 +64,7 @@ Transcrição de uma reunião comercial.
 |-----------------------|---------------------------------------------------------------------------|
 | README.md             | Documentação principal do projeto                                         |
 | agent.json            | Definição do agente em formato OpenAPI                                    |
-| foundry-config.md     | Guia de execução e configuração no Foundry                                |
+| foundry-config.md     | Guia de execução e diagrama de configuração no Foundry                    |
 | examples/             | Exemplos reais de entrada e saída                                         |
 | ├── entrada-transcricao.txt | Transcrição bruta da reunião                                        |
 | ├── saida-relatorio.json    | Saída estruturada gerada pelo agente                                |

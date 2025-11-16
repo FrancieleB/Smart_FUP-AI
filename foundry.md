@@ -8,7 +8,7 @@ Abaixo está o passo a passo completo, com as imagens do projeto.
 - Crie o recurso **Azure OpenAI**  
 - Defina nome, grupo de recursos e região permitida  
 
-📷 **Imagem:*  
+📷 *Imagem:*  
 ![resource-group](img/agent/resource-group.png)
 
 ---
@@ -19,7 +19,7 @@ Abaixo está o passo a passo completo, com as imagens do projeto.
 - Vá em **Deployments**  
 - Faça o deploy do modelo **gpt-4o-mini**  
 
-📷 **Imagem:*  
+📷 *Imagem:*  
 ![deploy-model](img/agent/deploy-agent.png)
 
 ---
@@ -34,7 +34,7 @@ Abaixo está o passo a passo completo, com as imagens do projeto.
   - Objetivo  
   - Chave/API do Azure OpenAI  
 
-📷 **Imagem:*  
+📷 *Imagem:*  
 ![foundry-agent-create](img/agent/config-agent.png)
 
 ---
@@ -49,7 +49,7 @@ O prompt define o comportamento do agente:
 - Estrutura tarefas  
 - Sugere e-mail automático  
 
-📷 **Imagem:*  
+📷 *Imagem:*  
 ![prompt-config](img/agent/definicao-fluxo.png)
 
 ---
@@ -63,7 +63,7 @@ Aqui criamos o fluxo responsável por:
   - E-mail de follow-up  
   - Criação de tarefas (opcional)
 
-📷 **Imagem:*  
+📷 *Imagem:*  
 ![logicapps-flow](img/agent/config-Logic-app4.png)
 
 ---
@@ -78,11 +78,13 @@ Após inserir uma transcrição real ou simulada, validamos:
 - Tarefas  
 - Corpo do e-mail sugerido  
 
-📷 **Exemplos de entrada:*  
+📷 *Exemplos de entrada:*  
 ![agent-input1](img/input/entrada1.png)
 
 📷 **Exemplos de saída:* 
-![agent-output1](img/output/resultado1.png)  
+1. 
+![agent-output1](img/output/resultado1.png) 
+2.   
 ![agent-output2](img/test/teste2.png)
 
 ---
