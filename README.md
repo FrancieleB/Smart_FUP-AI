@@ -1,6 +1,6 @@
 
 
-## 🧠 Descrição do Projeto
+# 🧠 Descrição do Projeto
 
 O **Smart_FUP-AI** é um agente de automação inteligente capaz de transformar **transcrições de reuniões comerciais** em **planos de ação objetivos**, incluindo follow-up, tarefas e próximos passos.
 
@@ -12,7 +12,7 @@ Combinando **Azure OpenAI**, **Foundry** e **Logic Apps**, o agente interpreta o
 
 Automatizar o pós-reunião comercial, garantindo clareza, rapidez e organização no follow-up.
 
-# Exemplo
+### Exemplo
 
 **Entrada:**  
 Transcrição de uma reunião comercial.
