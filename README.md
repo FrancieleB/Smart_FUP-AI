@@ -11,6 +11,7 @@ Combinando **Azure OpenAI**, **Foundry** e **Logic Apps**, o agente interpreta o
 ## 🎯 Objetivo do Agente
 
 Automatizar o pós-reunião comercial, garantindo clareza, rapidez e organização no follow-up.
+    
     📌 Reduz o esforço manual dos times de vendas e atendimento
 
     📌 Padroniza a comunicação com clientes, evitando esquecimentos ou inconsistências
