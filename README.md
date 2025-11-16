@@ -106,22 +106,27 @@ python-dotenv==1.0.1
 
 ## 📁 Estrutura do Projeto
 
-README.md             → Documentação principal do projeto
-src/
-  ├── agent.json      → Definição do agente em formato OpenAPI
-  └── instruction-agent.txt → Exemplo das instruções do agente
-foundry-config.md     → Guia de execução e diagrama de configuração no Foundry
-examples/
-  ├── entrada-transcricao.txt → Transcrição bruta da reunião
-  ├── saida-relatorio.json    → Saída estruturada gerada pelo agente
-  └── email-html-gerado.html  → E-mail de follow-up em HTML
-main.py               → Script principal para rodar o agente via SDK
-.env.example          → Exemplo de configuração de variáveis de ambiente
-img/agent/            → Prints da configuração do agente
-img/input/            → Print do prompt do usuário
-img/output/           → Resultados gerados pelo agente
-img/test/             → Prints de testes e validações
-| img/test/             | Prints de testes e validações  
+
+
+## 📁 Estrutura do Projeto
+
+| Pasta/Arquivo              | Descrição                                                                 |
+|-----------------------------|---------------------------------------------------------------------------|
+| **README.md**               | Documentação principal do projeto                                         |
+| **src/**                    | Configuração principal do agente                                          |
+| ├── agent.json              | Definição do agente em formato OpenAPI                                    |
+| └── instruction-agent.txt   | Exemplo das instruções do agente                                          |
+| **foundry-config.md**       | Guia de execução e diagrama de configuração no Foundry                    |
+| **examples/**               | Exemplos reais de entrada e saída                                         |
+| ├── entrada-transcricao.txt | Transcrição bruta da reunião                                              |
+| ├── saida-relatorio.json    | Saída estruturada gerada pelo agente                                      |
+| └── email-html-gerado.html  | E-mail de follow-up em HTML                                               |
+| **main.py**                 | Script principal para rodar o agente via SDK                              |
+| **.env.example**            | Exemplo de configuração de variáveis de ambiente                         |
+| **img/agent/**              | Prints da configuração do agente                                          |
+| **img/input/**              | Print do prompt do usuário                                                |
+| **img/output/**             | Resultados gerados pelo agente                                            |
+| **img/test/**               | Prints de testes e validações                                             |
 
 ## 🔗 Referências
 
