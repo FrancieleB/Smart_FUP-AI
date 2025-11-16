@@ -1,0 +1,116 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "version": "1.0.0.0",
+    "title": "email-follow-up",
+    "description": "Envia e-mail de follow-up com base no relatório da reunião gerado pelo agente."
+  },
+  "servers": [
+    {
+      "url": "https://prod-59.eastus2.logic.azure.com/workflows/8420f16eb8c54520bfd2173c5c8c6b35/triggers/When_a_HTTP_request_is_received/paths"
+    }
+  ],
+  "security": [
+    {
+      "sig": []
+    }
+  ],
+  "paths": {
+    "/invoke": {
+      "post": {
+        "description": "Envia e-mail de follow-up com base no relatório da reunião gerado pelo agente.",
+        "operationId": "When_a_HTTP_request_is_received-invoke",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "description": "`2016-10-01` is the most common generally available version",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "2016-10-01"
+            },
+            "example": "2016-10-01"
+          },
+          {
+            "name": "sv",
+            "in": "query",
+            "description": "The version number",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "1.0"
+            },
+            "example": "1.0"
+          },
+          {
+            "name": "sp",
+            "in": "query",
+            "description": "The permissions",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun"
+            },
+            "example": "%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Logic App Response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "The Logic App Response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email_to": {
+                    "type": "string"
+                  },
+                  "email_subject": {
+                    "type": "string"
+                  },
+                  "email_body": {
+                    "type": "string",
+                    "description": "Corpo do e-mail em HTML formatado para envio via Logic App."
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "sig": {
+        "type": "apiKey",
+        "description": "The SHA 256 hash of the entire request URI with an internal key.",
+        "name": "sig",
+        "in": "query"
+      }
+    }
+  }
+}

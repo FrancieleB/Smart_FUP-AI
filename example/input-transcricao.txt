@@ -1,0 +1,61 @@
+#1 Entrada
+
+Carlos Menezes xafoj43030@etramay.com Franciele Borges franciele.borges@ooo.com 
+
+0:00 — Franciele Borges Ribeiro Boa tarde, Carlos! Tudo bem?
+0:03 — Carlos Menezes Boa tarde, Franciele, tudo certo. E com você?
+0:05 — Franciele Borges Ribeiro Tudo ótimo! Vou só esperar um minutinho para ver se o Luiz consegue entrar. Ele é o nosso arquiteto de soluções.
+0:18 — Carlos Menezes Sem problemas.
+0:27 — Franciele Borges Ribeiro Acho que podemos começar. Carlos, o objetivo hoje é entender um pouco do seu ambiente atual, os desafios que vocês têm enfrentado e como a NuvemSegura pode apoiar tanto em cloud quanto segurança. Combinado?
+0:40 — Carlos Menezes Combinado. Na verdade, queria entender melhor o que vocês entregam. Estamos com algumas dores internas aqui.
+0:55 — Franciele Borges Ribeiro Claro! Deixa eu compartilhar minha tela rapidinho.
+1:05 — Carlos Menezes Perfeito, estou vendo.
+1:12 — Franciele Borges Ribeiro Beleza. Carlos, a NuvemSegura é focada em cloud privada, segurança e projetos de alta disponibilidade. Temos três datacenters — Curitiba, Miami e São Paulo — todos com certificações ISO e SLA garantido. Hoje atendemos mais de 300 clientes diretos.
+1:42 — Carlos Menezes Legal. O nosso maior problema hoje é performance e backup. Estamos com um ambiente híbrido também. Parte está em VMware local, parte já subimos para Azure, mas não temos visibilidade boa.
+2:05 — Franciele Borges Ribeiro Entendi. Vocês têm muito legado ainda no on-premises?
+2:11 — Carlos Menezes Temos. Nosso ERP roda em Windows Server 2012, e isso limita algumas migrações. Além disso, nosso firewall atual está com licença expirando em janeiro.
+2:35 — Franciele Borges Ribeiro Ótimo ponto. Nós trabalhamos com toda a linha Fortinet e também com backup Acronis. Dependendo do volume, conseguimos replicar para nosso datacenter ou para um dos 38 da Acronis no mundo.
+2:59 — Carlos Menezes Backup é algo que precisamos urgente. Tivemos dois incidentes de ransomware recentemente — nada grave, mas acendeu um alerta.
+3:20 — Franciele Borges Ribeiro Totalmente compreensível. Você tem ideia de quantos servidores precisariam ser protegidos inicialmente?
+3:30 — Carlos Menezes Uns 14 servidores. Os principais são ERP, banco SQL e file server. Hoje fazemos backup manual em storage local, mas não está funcionando bem.
+3:55 — Franciele Borges Ribeiro Perfeito. Luiz acabou de me mandar mensagem dizendo que não vai conseguir entrar agora, mas ele me passou algumas perguntas que ajudariam a montar a arquitetura depois: – Volume total de dados – Quantidade de usuários do ERP – Frequência de backup necessária – Janela de downtime permitida
+4:28 — Carlos Menezes Consigo te mandar tudo isso até amanhã.
+4:40 — Franciele Borges Ribeiro Ótimo! Depois que você me enviar, montamos uma proposta técnica com duas opções:
+* Backup + Disaster Recovery com Acronis
+* Hospedagem do ERP em nossa cloud privada
+Assim você consegue comparar.
+5:05 — Carlos Menezes Interessante. Hoje gastamos bastante com Azure e não vemos resultado.
+5:25 — Franciele Borges Ribeiro Sim, isso acontece bastante. Inclusive podemos fazer uma análise de custo comparativo Azure vs. NuvemSegura.
+5:42 — Carlos Menezes Seria excelente.
+5:54 — Franciele Borges Ribeiro Fechado então. Assim que você enviar as informações, montamos o estudo completo e agendamos uma segunda conversa com o Luiz para aprofundar o desenho da solução.
+6:10 — Carlos Menezes Perfeito. Obrigado, Franciele.
+6:13 — Franciele Borges Ribeiro Eu que agradeço, Carlos! Aguardo os dados então.
+
+#2 Entrada
+
+Mariana Costa loyih64376@fermiro.com Franciele Borges franciele.borges@ooo.com
+
+0:00 — Franciele Borges Ribeiro Boa tarde, Mariana! Tudo bem?
+0:03 — Mariana Costa Boa tarde, Franciele! Tudo ótimo, e com você?
+0:06 — Franciele Borges Ribeiro Tudo certo! Podemos começar? O objetivo hoje é entender o ambiente atual do Grupo Elotech e avaliar como a NuvemSegura pode apoiar na modernização do ERP e na segurança dos dados.
+0:20 — Mariana Costa Claro, vamos lá. Nosso ambiente está todo em servidores físicos, com manutenção cara e risco de falha.
+0:35 — Franciele Borges Ribeiro Entendi. Qual ERP vocês utilizam hoje?
+0:38 — Mariana Costa Protheus, com cerca de 40 usuários simultâneos.
+0:45 — Franciele Borges Ribeiro E como está o backup atual?
+0:48 — Mariana Costa É feito diariamente, mas sem replicação externa. Só temos cópia local.
+1:00 — Franciele Borges Ribeiro Certo. Isso representa um risco importante. Estamos vendo muitos casos de perda por ransomware.
+1:10 — Mariana Costa Sim, inclusive tivemos um susto mês passado.
+1:15 — Franciele Borges Ribeiro Nós trabalhamos com backup Acronis e também com cloud privada. Dependendo do volume, conseguimos replicar para nossos datacenters ou para os da Acronis.
+1:30 — Mariana Costa Interessante. Estamos avaliando migrar o ERP para nuvem, mas precisamos entender os custos e o tempo de implantação.
+1:45 — Franciele Borges Ribeiro Podemos montar uma proposta com duas opções:
+Backup com Acronis
+Migração do ERP para nossa cloud privada. Assim vocês comparam com o que têm hoje.
+2:05 — Mariana Costa Ótimo. Vocês conseguem fazer uma estimativa comparando com Azure?
+2:10 — Franciele Borges Ribeiro Sim, fazemos análise comparativa de custo e performance entre Azure e NuvemSegura.
+2:25 — Mariana Costa Excelente. O que vocês precisam para montar essa proposta?
+2:30 — Franciele Borges Ribeiro Algumas informações técnicas: – Volume total de dados – Janela de downtime permitida – Consumo atual de recursos
+2:45 — Mariana Costa Consigo te mandar tudo isso até terça-feira.
+2:50 — Franciele Borges Ribeiro Perfeito. Assim que recebermos, montamos o estudo e agendamos uma conversa com nosso arquiteto Luiz para detalhar a arquitetura.
+3:05 — Mariana Costa Combinado. Obrigada, Franciele!
+3:08 — Franciele Borges Ribeiro Eu que agradeço, Mariana! Fico no aguardo dos dados.
+

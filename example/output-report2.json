@@ -1,0 +1,52 @@
+{
+    "cliente": "Grupo Elotech",
+    "data_reuniao": "2025-11-15",
+    "participantes": [
+      "Franciele Borges Ribeiro",
+      "Mariana Costa"
+    ],
+    "assunto": "Modernização do ERP e segurança dos dados",
+    "resumo_objetivo": "Compreender o ambiente atual do Grupo Elotech e discutir como a NuvemSegura pode auxiliar na modernização do ERP e na segurança dos dados.",
+    "pontos_importantes": [
+      "Ambiente atual composto por servidores físicos, com altos custos de manutenção e risco de falhas",
+      "ERP utilizado: Protheus, com cerca de 40 usuários simultâneos",
+      "Backup realizado diariamente, mas sem replicação externa (somente cópias locais)",
+      "Incidente recente levantou preocupações sobre segurança de dados",
+      "NuvemSegura oferece soluções de backup com Acronis e cloud privada, incluindo replicação",
+      "Interesse em avaliar migração do ERP para nuvem, com foco em custos e tempo de implantação"
+    ],
+    "estrategias_sugeridas": [
+      "Desenvolver proposta com duas opções: Backup com Acronis e Migração do ERP para cloud privada",
+      "Realizar análise comparativa de custos entre solução proposta e Azure",
+      "Agendar reunião futura com arquiteto Luiz para discutir arquitetura detalhada"
+    ],
+    "proximos_passos": {
+      "tarefas": [
+        "Mariana enviará detalhes técnicos (volume de dados, janela de downtime, consumo atual) até terça-feira"
+      ],
+      "followups": [
+        "Franciele preparará estudo e programará reunião com Luiz após receber os dados"
+      ],
+      "emails": [
+        {
+          "assunto": "Informações para proposta de migração e backup",
+          "objetivo": "Confirmar envio das informações técnicas solicitadas"
+        }
+      ],
+      "itens_pendentes": [
+        "Receber informações técnicas de Mariana até terça-feira"
+      ],
+      "riscos": [
+        "Atrasos no envio das informações podem impactar cronograma da proposta"
+      ],
+      "oportunidades": [
+        "Possibilidade de oferecer soluções mais eficientes e seguras em comparação ao ambiente atual e Azure"
+      ]
+    },
+    "perguntas_esclarecimento": [
+      "Qual é o volume total de dados atualmente em uso no ERP?",
+      "Quais são os recursos consumidos atualmente e quais são as expectativas de consumo após a migração?"
+    ],
+    "observacoes": "A urgência em abordar a questão do backup, especialmente após o recente susto com ransomware, pode acelerar a tomada de decisão."
+  }
+  

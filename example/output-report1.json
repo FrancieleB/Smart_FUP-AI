@@ -1,0 +1,52 @@
+{
+    "cliente": "Empresa de Carlos Menezes",
+    "data_reuniao": "2025-11-15",
+    "participantes": [
+      "Franciele Borges Ribeiro",
+      "Carlos Menezes"
+    ],
+    "assunto": "Performance e backup em ambiente híbrido",
+    "resumo_objetivo": "Entender os desafios enfrentados pela empresa de Carlos, especialmente em relação a performance e backup em um ambiente híbrido.",
+    "pontos_importantes": [
+      "NuvemSegura oferece cloud privada e segurança com datacenters em Curitiba, Miami e São Paulo",
+      "Problemas de performance e backup ineficaz no ambiente híbrido (VMware local e Azure)",
+      "ERP rodando em Windows Server 2012 e firewall prestes a expirar",
+      "Necessidade urgente de backup devido a incidentes recentes de ransomware",
+      "Solução mencionada: Fortinet e Acronis para backup e segurança",
+      "Proteção necessária para aproximadamente 14 servidores críticos"
+    ],
+    "estrategias_sugeridas": [
+      "Desenvolver proposta técnica com opções de backup e disaster recovery",
+      "Análise comparativa de custos entre Azure e NuvemSegura",
+      "Agendar reunião com arquiteto Luiz para detalhar solução"
+    ],
+    "proximos_passos": {
+      "tarefas": [
+        "Carlos enviará detalhes sobre volume de dados, usuários do ERP, frequência de backup e janela de downtime até amanhã"
+      ],
+      "followups": [
+        "Franciele montará proposta técnica e análise de custos após receber informações de Carlos"
+      ],
+      "emails": [
+        {
+          "assunto": "Informações solicitadas para proposta técnica",
+          "objetivo": "Enviar dados sobre servidores e requisitos de backup"
+        }
+      ],
+      "itens_pendentes": [
+        "Recebimento das informações detalhadas de Carlos"
+      ],
+      "riscos": [
+        "Possíveis atrasos na recepção das informações podem impactar a proposta e análise de custos"
+      ],
+      "oportunidades": [
+        "Fornecer soluções mais custo-efetivas que Azure"
+      ]
+    },
+    "perguntas_esclarecimento": [
+      "Quais são os volumes totais de dados a serem considerados para backup?",
+      "Qual é a frequência ideal para os backups?"
+    ],
+    "observacoes": "A urgência na proteção contra ransomware pode acelerar a decisão de contratação de novos serviços."
+  }
+  
