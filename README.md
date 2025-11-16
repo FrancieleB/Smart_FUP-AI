@@ -54,26 +54,62 @@ Transcrição de uma reunião comercial.
 | **Foundry (Microsoft)** | Execução, prompt, interface do agente |
 | **Logic Apps** | Envio automático de e-mail e automações |
 | **GitHub** | Repositório do código e documentação |
+|**Azure CLI + SDK** |	Autenticação e execução local do agente |
 
 
+---
+## ▶️ Execução Local
+
+### 1. Preparar ambiente virtual
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+2. Configurar variáveis no .env
+env
+AZURE_AI_ENDPOINT=https://<nome-do-recurso>.cognitiveservices.azure.com/
+AGENT_NAME=<Agent ID do Foundry>
+3. Autenticar no Azure
+bash
+brew install azure-cli   # se não tiver instalado
+az login
+az account show          # confirmar assinatura ativa
+4. Rodar o agente
+bash
+python main.py
+5. Exemplo de mensagem
+python
+message = project.agents.messages.create(
+    thread_id=thread.id,
+    role="user",
+    content="Resumo da reunião: Cliente pediu proposta até terça-feira, mencionou interesse em desconto e quer agendar demo. Gere um follow-up."
+)
+Instalação de Dependências Coloque o requirements.txt também em bloco de código:
+txt
+azure-ai-projects==1.0.0b2
+azure-ai-agents==1.0.0b2
+azure-identity==1.17.1
+python-dotenv==1.0.1 
+```
 ---
 
 ## 📁 Estrutura do Projeto
 
-| Pasta/Arquivo        | Descrição                                                                 |
-|-----------------------|---------------------------------------------------------------------------|
-| README.md             | Documentação principal do projeto                                         |
-| src                   | Configuração principal do agente                                          |
-  ├── agent.json        | Definição do agente em formato OpenAPI                                    |
-  ├── instruction-agent.txt   | Exemplo das instruções do agente                                    |
-| foundry-config.md     | Guia de execução e diagrama de configuração no Foundry                    |
-| examples/             | Exemplos reais de entrada e saída                                         |
-| ├── entrada-transcricao.txt | Transcrição bruta da reunião                                        |
-| ├── saida-relatorio.json    | Saída estruturada gerada pelo agente                                |
-| └── email-html-gerado.html  | E-mail de follow-up em HTML                                         |
-| img/agent/            | Prints da configuração do agente                                          |
-| img/input/            | Print do prompt do usuário                                                |
-| img/output/           | Resultados gerados pelo agente                                            |
+README.md             → Documentação principal do projeto
+src/
+  ├── agent.json      → Definição do agente em formato OpenAPI
+  └── instruction-agent.txt → Exemplo das instruções do agente
+foundry-config.md     → Guia de execução e diagrama de configuração no Foundry
+examples/
+  ├── entrada-transcricao.txt → Transcrição bruta da reunião
+  ├── saida-relatorio.json    → Saída estruturada gerada pelo agente
+  └── email-html-gerado.html  → E-mail de follow-up em HTML
+main.py               → Script principal para rodar o agente via SDK
+.env.example          → Exemplo de configuração de variáveis de ambiente
+img/agent/            → Prints da configuração do agente
+img/input/            → Print do prompt do usuário
+img/output/           → Resultados gerados pelo agente
+img/test/             → Prints de testes e validações
 | img/test/             | Prints de testes e validações  
 
 ## 🔗 Referências
