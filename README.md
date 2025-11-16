@@ -11,6 +11,15 @@ Combinando **Azure OpenAI**, **Foundry** e **Logic Apps**, o agente interpreta o
 ## 🎯 Objetivo do Agente
 
 Automatizar o pós-reunião comercial, garantindo clareza, rapidez e organização no follow-up.
+    📌 Reduz o esforço manual dos times de vendas e atendimento
+
+    📌 Padroniza a comunicação com clientes, evitando esquecimentos ou inconsistências
+
+    📌 Gera insights estratégicos a partir das transcrições, identificando oportunidades de negócio
+
+    📌 Transforma decisões em ações concretas, com tarefas e próximos passos bem definidos
+
+    📌 Acelera o ciclo comercial, aumentando a eficiência e a taxa de conversão
 
 ## Exemplo
 
@@ -67,9 +76,13 @@ Transcrição de uma reunião comercial.
 ## 🔗 Referências
 
 Azure OpenAI → https://learn.microsoft.com/en-us/azure/ai-services/openai/
+
 Foundry → https://foundry.microsoft.com/
+
 Power Automate → https://learn.microsoft.com/en-us/power-automate/
+
 GitHub Guides → https://guides.github.com/
+
 Microsoft Learn for Students → https://learn.microsoft.com/en-us/users/student-hub/
 
 ## 👩‍💻 Autoria
