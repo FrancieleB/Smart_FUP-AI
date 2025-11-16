@@ -63,7 +63,9 @@ Transcrição de uma reunião comercial.
 | Pasta/Arquivo        | Descrição                                                                 |
 |-----------------------|---------------------------------------------------------------------------|
 | README.md             | Documentação principal do projeto                                         |
-| agent.json            | Definição do agente em formato OpenAPI                                    |
+| src                   | Configuração principal do agente                                          |
+  ├── agent.json        | Definição do agente em formato OpenAPI                                    |
+  ├── instruction-agent.txt   | Exemplo das instruções do agente                                    |
 | foundry-config.md     | Guia de execução e diagrama de configuração no Foundry                    |
 | examples/             | Exemplos reais de entrada e saída                                         |
 | ├── entrada-transcricao.txt | Transcrição bruta da reunião                                        |
