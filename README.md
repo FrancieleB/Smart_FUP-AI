@@ -71,8 +71,9 @@ Transcrição de uma reunião comercial.
 | ├── entrada-transcricao.txt | Transcrição bruta da reunião                                        |
 | ├── saida-relatorio.json    | Saída estruturada gerada pelo agente                                |
 | └── email-html-gerado.html  | E-mail de follow-up em HTML                                         |
-| img/agent/            | Prints da configuração do agente                             |
-| img/output/           | Resultados gerados pelo agente                                           |
+| img/agent/            | Prints da configuração do agente                                          |
+| img/input/            | Print do prompt do usuário                                                |
+| img/output/           | Resultados gerados pelo agente                                            |
 | img/test/             | Prints de testes e validações  
 
 ## 🔗 Referências
