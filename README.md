@@ -66,27 +66,37 @@ Transcrição de uma reunião comercial.
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-2. Configurar variáveis no .env
-env
+```
+
+### 2. Configurar variáveis no .env
+```env
 AZURE_AI_ENDPOINT=https://<nome-do-recurso>.cognitiveservices.azure.com/
 AGENT_NAME=<Agent ID do Foundry>
-3. Autenticar no Azure
-bash
+```
+
+### 3. Autenticar no Azure
+```bash
 brew install azure-cli   # se não tiver instalado
 az login
 az account show          # confirmar assinatura ativa
-4. Rodar o agente
-bash
+```
+
+### 4. Rodar o agente
+```bash
 python main.py
-5. Exemplo de mensagem
-python
+```
+
+### 5. Exemplo de mensagem
+```python
 message = project.agents.messages.create(
     thread_id=thread.id,
     role="user",
     content="Resumo da reunião: Cliente pediu proposta até terça-feira, mencionou interesse em desconto e quer agendar demo. Gere um follow-up."
 )
-Instalação de Dependências Coloque o requirements.txt também em bloco de código:
-txt
+```
+### 📦 Instalação de Dependências no requirements.txt 
+
+```txt 
 azure-ai-projects==1.0.0b2
 azure-ai-agents==1.0.0b2
 azure-identity==1.17.1
