@@ -59,7 +59,42 @@ Transcrição de uma reunião comercial.
 
 
 ---
+## 📁 Estrutura do Projeto
+
+| Pasta/Arquivo              | Descrição                                                                 |
+|-----------------------------|---------------------------------------------------------------------------|
+| [**README.md**](README.md)            | Documentação principal do projeto                                         |
+| [**src/**](src/)                  | Configuração principal do agente                                          |
+| ├── [agent.json](src/agent.json)              | Definição do agente em formato OpenAPI                                    |
+| └── [instruction-agent.txt](src/instruction-agent.txt)   | Exemplo das instruções do agente                                          |
+| [**foundry-config.md**](foundry.md)      | Guia de execução e diagrama de configuração no Foundry                    |
+| [**example/**](example)                 | Exemplos reais de entrada e saída                                         |
+| ├── [input-transcricao.txt](example/input-transcricao.txt)   | Transcrição bruta da reunião                                            |
+| ├── [output-report1.json](example/output-report1.json)   | Saída estruturada gerada pelo agente                                      |
+├── [output-report2.json](example/output-report2.json)   | Saída estruturada gerada pelo agente     |
+| └── [email-gerado.html](example/email-gerado.html) | E-mail de follow-up em HTML                                                    |
+| [**main.py** ](main.py)                 | Script principal para rodar o agente via SDK                                                     |
+| [**img/agent/**  ](img/agent)                 | Prints da configuração do agente                                          |
+| [**img/input/**  ](img/input)              | Print do prompt do usuário                                                |
+| [**img/output/**  ](img/output)              | Resultados gerados pelo agente                                            |
+| [**img/test/**  ](img/test)                | Prints de testes e validações                                             |
+
+
+---
 ## ▶️ Execução Local
+
+ Abaixo segue o passo a passo para rodar o agente     localmente, caso queira mais informações sobre a criação e configuração do agente, verifique o [**foundry-config.md**](foundry.md) 
+
+>#### ⚙️ Pré-requisitos para execução local
+> - Conta e recursos
+> - Conta no Azure ativa
+> - Recurso Azure OpenAI criado e com modelo gpt-4o-mini (ou outro disponível) já em deployment
+> - Agent configurado no Foundry (para obter o AGENT_NAME / ID do agente)
+> - Ambiente de Desenvolvimento
+Python 3.9+ instalado
+> - pip atualizado (pip install --upgrade pip)
+> - Virtualenv ou venv para criar ambiente isolado
+> - Dependências Python
 
 ### 1. Preparar ambiente virtual
 ```bash
@@ -104,26 +139,6 @@ python-dotenv==1.0.1
 ```
 ---
 
-## 📁 Estrutura do Projeto
-
-| Pasta/Arquivo              | Descrição                                                                 |
-|-----------------------------|---------------------------------------------------------------------------|
-| **README.md**               | Documentação principal do projeto                                         |
-| **src/**                    | Configuração principal do agente                                          |
-| ├── agent.json              | Definição do agente em formato OpenAPI                                    |
-| └── instruction-agent.txt   | Exemplo das instruções do agente                                          |
-| **foundry-config.md**       | Guia de execução e diagrama de configuração no Foundry                    |
-| **examples/**               | Exemplos reais de entrada e saída                                         |
-| ├── entrada-transcricao.txt | Transcrição bruta da reunião                                              |
-| ├── saida-relatorio.json    | Saída estruturada gerada pelo agente                                      |
-| └── email-gerado.html  | E-mail de follow-up em HTML                                                    |
-| **main.py**                 | Script principal para rodar o agente via SDK                              |
-| **.env.example**            | Exemplo de configuração de variáveis de ambiente                         |
-| **img/agent/**              | Prints da configuração do agente                                          |
-| **img/input/**              | Print do prompt do usuário                                                |
-| **img/output/**             | Resultados gerados pelo agente                                            |
-| **img/test/**               | Prints de testes e validações                                             |
-
 ## 🔗 Referências
 
 Azure OpenAI → https://learn.microsoft.com/en-us/azure/ai-services/openai/
@@ -139,4 +154,5 @@ Microsoft Learn for Students → https://learn.microsoft.com/en-us/users/student
 ## 👩‍💻 Autoria
 
 Desenvolvido por Franciele Borges
+
 Projeto criado para o desafio Azure Frontier Girls com foco em automação inteligente usando Foundry + Azure AI + Logic Apps.

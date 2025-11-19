@@ -2,14 +2,24 @@
 
 Abaixo está o passo a passo completo, com as imagens do projeto.
 
+---
+
 ## 1️⃣ Criar o Recurso Azure OpenAI
 
 - Acesse o **Azure Portal**  
-- Crie o recurso **Azure OpenAI**  
+- Crie o recurso no **Resource Group** ou diretamente no **Foundry**  
 - Defina nome, grupo de recursos e região permitida  
 
-📷 *Imagem:*  
+> **Observação:**  
+> Na imagem apresentada está configurado na região *Canada East*, entretanto este projeto foi desenvolvido no *East US 2* devido às permissões da organização.  
+
+📷 *Imagens:*  
+
+1. Criação do Resource Group  
 ![resource-group](img/agent/resource-group.png)
+
+2. Criação do projeto no Foundry  
+![criacao-foundry](img/agent/criacao-projeto.png)
 
 ---
 
@@ -18,6 +28,9 @@ Abaixo está o passo a passo completo, com as imagens do projeto.
 - Abra o recurso Azure OpenAI  
 - Vá em **Deployments**  
 - Faça o deploy do modelo **gpt-4o-mini**  
+
+> **Observação:**  
+> A intenção inicial era utilizar o modelo *gpt-4.1*, entretanto devido às permissões da organização foi utilizado o *gpt-4o-mini*.  
 
 📷 *Imagem:*  
 ![deploy-model](img/agent/deploy-agent.png)
@@ -28,7 +41,7 @@ Abaixo está o passo a passo completo, com as imagens do projeto.
 
 - Acesse o Foundry  
 - Clique em **Create Agent**  
-- Configure:
+- Configure:  
   - Nome: Smart_FUP-AI  
   - Descrição  
   - Objetivo  
@@ -49,6 +62,8 @@ O prompt define o comportamento do agente:
 - Estrutura tarefas  
 - Sugere e-mail automático  
 
+Visualize o prompt completo em [Instruções do Agent](src/instruction-agent.txt).
+
 📷 *Imagem:*  
 ![prompt-config](img/agent/definicao-fluxo.png)
 
@@ -59,9 +74,10 @@ O prompt define o comportamento do agente:
 Aqui criamos o fluxo responsável por:
 
 - Receber a saída do agente  
-- Disparar:
+- Disparar:  
   - E-mail de follow-up  
-  - Criação de tarefas (opcional)
+
+Após clicar em *adicionar ação*, acesse no repositório `img/agent/` e siga as 4 etapas do arquivo **config-logic-app.png**.  
 
 📷 *Imagem:*  
 ![logicapps-flow](img/agent/config-Logic-app4.png)
@@ -81,10 +97,12 @@ Após inserir uma transcrição real ou simulada, validamos:
 📷 *Exemplos de entrada:*  
 ![agent-input1](img/input/entrada1.png)
 
-📷 **Exemplos de saída:* 
-1. 
-![agent-output1](img/output/resultado1.png) 
-2.   
+📷 *Exemplos de saída:*  
+
+1.  
+![agent-output1](img/output/resultado1.png)  
+
+2.  
 ![agent-output2](img/test/teste2.png)
 
 ---
