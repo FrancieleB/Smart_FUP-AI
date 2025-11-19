@@ -114,7 +114,7 @@ flowchart TD
     B --> C[Azure OpenAI - gpt-4o-mini]
     C --> D[Saída Estruturada: resumo, follow-up, tarefas]
     D --> E[Power Automate / Logic Apps]
-    E --> F[Envio de E-mail / Criação de Tarefas]
+    E --> F[Envio de E-mail ]
 ```
 
 ## 📊 Estrutura de Output Produzido
