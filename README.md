@@ -151,6 +151,8 @@ GitHub Guides → https://guides.github.com/
 
 Microsoft Learn for Students → https://learn.microsoft.com/en-us/users/student-hub/
 
+AzureFrontierGirls-AI-Challenge → https://github.com/Miyake-Diogo/AzureFrontierGirls-AI-Challenge
+
 ## 👩‍💻 Autoria
 
 Desenvolvido por Franciele Borges
